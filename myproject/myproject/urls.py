@@ -18,4 +18,7 @@ from django.urls import path,include ## This is going to allow us to include a s
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',include('myapp.urls'))
 ]
+
+## This will now go to myapp.url and include a similar type of url
