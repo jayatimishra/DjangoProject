@@ -1,10 +1,12 @@
-from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponse 
 
 def index(request):
-   name='Jayati'
-   return render(request,'index.html' ,{'name': name})          ##Creating an index functions that was rendered in urls.py
+   context = { 'name': 'Jayati',
+   'age' : 19, 'nationality' : 'Indian'
+
+   }
+   return render(request,'index.html' , context)          ##Creating an index functions that was rendered in urls.py
 
 
 # Create your views here.
