@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 def index(request):
    name='Jayati'
-   return render(request,'index.html', {'name': name})         ##Creating an index functions that was rendered in urls.py
+   return render(request,'index.html' ,{'name': name})         ##Creating an index functions that was rendered in urls.py
 
 
 # Create your views here.
