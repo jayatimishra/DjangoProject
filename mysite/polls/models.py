@@ -32,3 +32,25 @@ Each member has a number of class variables, each of which represents a database
 
 
 """
+
+
+"""
+After you've made changes to the models.py file 
+It is time to let Django know that you've made some changes and that you'd like the changes to be stored as a migration.
+For that the following command is used:
+python manage.py makemigrations polls
+
+
+Now to create the data models that you want to create in your app you will have to run the following command:
+python manage.py migrate
+
+This runs the migrations for you and manages your database schema automatically
+
+
+
+
+
+
+
+
+"""
