@@ -29,7 +29,24 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+"""
+That small of modes code, gives Django a lot information.
+With it, Django is able:
+- Create a database schema (CREATE TABLE statements for this app).
+- Create a python database access API for accessing Question and Choice objecrs.
+ 
+ BUT, FIRST WE NEED TO TELL OUR PROJECT THAT polls APP is installed.
 
+
+ To include the app in our project we need to add a reference lassin the INSTALLED_APPS setting.
+ The PollsConfig class in the polls/apps.py file, so its dotted path is polls.apps.PollsConfig
+
+ Edit the settings.py file and add the path to the INSTALLED_APPS list
+
+
+
+
+"""
 INSTALLED_APPS = [
     'polls.apps.PollsConfig'
     'django.contrib.admin',
