@@ -21,3 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 #This step is used to point the root URLConf to the polls.urls module 
+#The include function allows referencing other URLconfs
+#Whenever Django encounters include() it chops off whatever part of the url matched up to that point  and sends the remaining URL to URLconf for further processing
+#The idea behing include() is to make it easy to plug-and-play URLs
+#Since polls are in their URLconf(polls/urls.py), they can be placed under "/polls/", or nder "/fun_polls/" , or under "/content/polls/", or any other path root and the app will still work.
