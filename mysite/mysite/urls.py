@@ -25,3 +25,9 @@ urlpatterns = [
 #Whenever Django encounters include() it chops off whatever part of the url matched up to that point  and sends the remaining URL to URLconf for further processing
 #The idea behing include() is to make it easy to plug-and-play URLs
 #Since polls are in their URLconf(polls/urls.py), they can be placed under "/polls/", or nder "/fun_polls/" , or under "/content/polls/", or any other path root and the app will still work.
+""" An index view has now been wired to URLconf. We can verify that it's working by running python manage.py runserver
+
+
+
+
+"""
